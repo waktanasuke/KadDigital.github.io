@@ -9,22 +9,47 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('Full_Slow_Speed.gif'); /* Replace 'background_image.gif' with your GIF file */
+            background-image: url('Full_Slow_Speed.gif'); /* Replace 'Full_Slow_Speed.gif' with your GIF file */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
         .container {
-            max-width: 800px;
+            max-width: 55%;
             margin: 20px auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8); /* Add transparency to make text readable */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {text-align: center; font-style: italic; font-family: 'Brush Script MT', cursive;font-size: 42px;}
-		h3 {text-align: center; font-size: 28px;}
-		h1, p {text-align: center;}
+		 h1 { 
+            text-align: center; 
+            font-size: 4vw; /* Responsive font size */
+        }
+        h2 { 
+            text-align: center; 
+            font-style: italic; 
+            font-family: 'Brush Script MT', cursive;
+            font-size: 5vw; /* Responsive font size */
+        }
+        h3 { 
+            text-align: center; 
+            font-size: 3.5vw; /* Responsive font size */
+        }
+        p {
+            text-align: center;
+            font-size: 2vw; /* Responsive font size */
+        }
+        h5 {
+            text-align: center;
+            font-style: italic;
+            font-size: 2vw; /* Responsive font size */
+        }
+		 h6 {
+            text-align: center;
+            font-style: italic;
+            font-size: 0.5vw; /* Responsive font size */
+        }
         .event-details {
             margin-top: 20px;
         }
@@ -37,31 +62,61 @@
         }
         .btn {
             padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
             border: none; /* Remove border */
             cursor: pointer; /* Add pointer cursor */
         }
+        #playButton {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        #stopButton {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
         .btn:hover {
-            background-color: #0056b3;
+            opacity: 0.8;
         }
         .map-container {
             margin-top: 20px;
         }
         .map {
-            width: 100%;
-            height: 400px; /* Adjust the height as needed */
+            width: 60%;
+            height: 50vw; /* Adjust the height as needed */
+            max-height: 150vw;
             border-radius: 8px;
             overflow: hidden;
+        }
+
+        @media (min-width: 768px) {
+			h1 {
+                font-size: 3vw; /* Adjust for larger screens */
+            }
+            h2 {
+                font-size: 4vw; /* Adjust for larger screens */
+            }
+            h3 {
+                font-size: 2.5vw; /* Adjust for larger screens */
+            }
+            p {
+                font-size: 2vw; /* Adjust for larger screens */
+            }
+            h5 {
+                font-size: 1.5vw; /* Adjust for larger screens */
+            }
+			h6 {
+                font-size: 0.5vw; /* Adjust for larger screens */
+            }
+            .map {
+                height: 150px; /* Fixed height for larger screens */
+            }
         }
     </style>
 </head>
 <body>
     <audio id="backgroundAudio">
-        <source src="Sekecil burung kedidi  SOUND ONLY.mp3" type="audio/mpeg"> <!-- Replace 'background_music.mp3' with your audio file -->
+        <source src="Sekecil burung kedidi  SOUND ONLY.mp3" type="audio/mpeg"> <!-- Replace 'Sekecil burung kedidi  SOUND ONLY.mp3' with your audio file -->
         Your browser does not support the audio element.
     </audio>
 
@@ -71,50 +126,73 @@
         <h2><strong>Dasuqi & Izzaty</strong></h2>
         <p><strong>SABTU</strong></p>
         <p><strong>15 JUNE 2024 / Dhuʻl-Hijjah 9, 1445 AH</strong></p>
-
-	<div class="btn-container">
-            <button id="playButton" class="btn">Play Background Music</button>
+        
+        <div class="btn-container">
+            <button id="playButton" class="btn">Mainkan Muzik Latar</button>
         </div>
-	    
+        
         <h3>السلام عليكم ورحمة الله وبركاته</h3>
-        
-        <p>MOHAMAD DAHLAN @ PUSA BINTI TERISIT</p>
+         
+        <p><strong>MOHAMAD DAHLAN @ PUSA BIN TERISIT</strong></p>
         <p>&</p>
-        <p>DARA BINTI BUJANG</p>
+        <p><strong>DARA BINTI BUJANG</strong></p>
         
-        <p>DENGAN SEGALA HORMATNYA MENJEMPUT DATO’ / DATIN / TUAN / PUAN / ENCIK / CIK DAN SEISI KELUARGA KE MAJLIS PERKAHWINAN PUTERI KAMI BERSAMA PASANGANNYA </p>
+        <p>DENGAN SEGALA HORMATNYA MENJEMPUT DATO’ / DATIN / TUAN / PUAN / ENCIK / CIK DAN SEISI KELUARGA KE MAJLIS PERKAHWINAN PUTERA KAMI BERSAMA PASANGANNYA </p>
         
         <div class="event-details">
             <p><strong>Date:</strong> 15 June , 2024</p>
             <p><strong>Time:</strong> 08:00 AM - 12:00 PM</p>
             <p><strong>Location:</strong> NO 81, KAMPUNG SUNGAI KUT TENGAH, 96300, DALAT, SARAWAK</p>
+            
+            <h5>اَللَّهُمَّ اغْفِرْ لَهُمْ، وَارْحَمْهُمْ، وَبَاِرِكْ لَهُمْ فِيْمَا رَزَقْتَهُمْ</h5>
+            <h5>“Ya Allah, ampunilah mereka, sayangilah mereka dan berkahilah mereka pada apa-apa yang Engkau karuniakan kepada mereka.” – (Hadis riwayat Ahmad)</h5>
         </div>
         
-       
-        <!-- Google Maps Location -->
-        <div class="map-container">
-			<iframe
-				width="300"
-				height="150"
-				style="border:0; display: block; margin: 0 auto;"
-				loading="lazy"
-				frameborder="0"
-				style="border:0;"
-				allowfullscreen=""
-				aria-hidden="false"
-				tabindex="0"
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.67636148663!2d-2.7175963!3d111.8815531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490152ca5b9b70f%3A0x1300efcecc55b5a3!2sSpace%20Needle!5e0!3m2!1sen!2sus!4v1622389713154!5m2!1sen!2sus">
-			</iframe>
-
-
+        <div class="btn-container">
+            <button id="stopButton" class="btn">Matikan Muzik Latar</button>
         </div>
+        
+        <!-- Google Maps Location
+        <div class="map-container">
+            <iframe
+                width="50%"
+                height="150"
+                frameborder="0"
+                style="border:0; display: block; margin: 0 auto;"
+                loading="lazy"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.67636148663!2d2.7176816701439623!3d111.88153286693586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490152ca5b9b70f%3A0x1300efcecc55b5a3!2sSpace%20Needle!5e0!3m2!1sen!2sus!4v1622389713154!5m2!1sen!2sus">
+            </iframe>
+        </div>
+		-->
+		
+		 <p>Sila Imbas Lokasi</p>
+		 <img id="qrCodeImage" src="QR_Location.png" alt="QR Code" style="display: block; margin: 20px auto; width: 200px; height: auto; cursor: pointer;">
+		 <h6>Kad Digital by : D&D Family</h6>
     </div>
 
     <script>
-        document.getElementById('playButton').addEventListener('click', function() {
-            var audio = document.getElementById('backgroundAudio');
+        var audio = document.getElementById('backgroundAudio');
+        var playButton = document.getElementById('playButton');
+        var stopButton = document.getElementById('stopButton');
+
+        playButton.addEventListener('click', function() {
             audio.play();
-            this.disabled = true;
+            playButton.disabled = true;
+            stopButton.disabled = false;
+        });
+
+        stopButton.addEventListener('click', function() {
+            audio.pause();
+            audio.currentTime = 0; // Reset audio to the beginning
+            playButton.disabled = false;
+            stopButton.disabled = true;
+        });
+		 document.getElementById('qrCodeImage').addEventListener('click', function() {
+            var qrCodeURL = "https://www.google.com/maps/place/2%C2%B043'03.4%22N+111%C2%B052'53.6%22E/@2.7176093,111.87943,18z/data=!4m12!1m7!3m6!1s0x31f7a7ee451ceb53:0xeaa6aa8cc1cdcbf9!2sSungai+Kut!8m2!3d2.716565!4d111.8788035!16s%2Fg%2F11bw893sch!3m3!8m2!3d2.717607!4d111.881553?entry=ttu"; // Replace with your actual QR code URL
+            alert("QR Code URL: " + qrCodeURL);
         });
     </script>
 </body>
