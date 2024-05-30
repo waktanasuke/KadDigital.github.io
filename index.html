@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jemputan Majlis Kesyukuran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Full_Slow_Speed.gif'); /* Replace 'background_image.gif' with your GIF file */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Add transparency to make text readable */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {text-align: center; font-style: italic; font-family: 'Brush Script MT', cursive;font-size: 42px;}
+		h3 {text-align: center; font-size: 28px;}
+		h1, p {text-align: center;}
+        .event-details {
+            margin-top: 20px;
+        }
+        .event-details p {
+            margin-bottom: 10px;
+        }
+        .btn-container {
+            text-align: center; /* Center align the button */
+            margin-top: 20px; /* Add some space between the content and the button */
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: none; /* Remove border */
+            cursor: pointer; /* Add pointer cursor */
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .map-container {
+            margin-top: 20px;
+        }
+        .map {
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <audio id="backgroundAudio">
+        <source src="Sekecil burung kedidi  SOUND ONLY.mp3" type="audio/mpeg"> <!-- Replace 'background_music.mp3' with your audio file -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h1>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+        <h1>Majlis Kesyukuran & Doa Selamat</h1>
+        <h2><strong>Dasuqi & Izzaty</strong></h2>
+        <p><strong>SABTU</strong></p>
+        <p><strong>15 JUNE 2024 / Dhuʻl-Hijjah 9, 1445 AH</strong></p>
+        <h3>السلام عليكم ورحمة الله وبركاته</h3>
+        
+        <p>MOHAMAD DAHLAN @ PUSA BINTI TERISIT</p>
+        <p>&</p>
+        <p>DARA BINTI BUJANG</p>
+        
+        <p>DENGAN SEGALA HORMATNYA MENJEMPUT DATO’ / DATIN / TUAN / PUAN / ENCIK / CIK DAN SEISI KELUARGA KE MAJLIS PERKAHWINAN PUTERI KAMI BERSAMA PASANGANNYA </p>
+        
+        <div class="event-details">
+            <p><strong>Date:</strong> 15 June , 2024</p>
+            <p><strong>Time:</strong> 08:00 AM - 12:00 PM</p>
+            <p><strong>Location:</strong> NO 81, KAMPUNG SUNGAI KUT TENGAH, 96300, DALAT, SARAWAK</p>
+        </div>
+        
+        <div class="btn-container">
+            <button id="playButton" class="btn">Play Background Music</button>
+        </div>
+        
+        <!-- Google Maps Location -->
+        <div class="map-container">
+			<iframe
+				width="500"
+				height="150"
+				style="border:0; display: block; margin: 0 auto;"
+				loading="lazy"
+				frameborder="0"
+				style="border:0;"
+				allowfullscreen=""
+				aria-hidden="false"
+				tabindex="0"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.67636148663!2d-2.7175963!3d111.8815531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490152ca5b9b70f%3A0x1300efcecc55b5a3!2sSpace%20Needle!5e0!3m2!1sen!2sus!4v1622389713154!5m2!1sen!2sus">
+			</iframe>
+
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('backgroundAudio');
+            audio.play();
+            this.disabled = true;
+        });
+    </script>
+</body>
+</html>
